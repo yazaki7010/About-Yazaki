@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yazaki7010.github.io/About-Yazaki/sitemap.xml

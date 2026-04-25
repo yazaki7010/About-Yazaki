@@ -3,7 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Naoto Yazaki | Portfolio</title>
+  <title>矢崎 直音 / Naoto Yazaki | Portfolio</title>
+  <meta name="description" content="矢崎 直音（Naoto Yazaki）のポートフォリオサイトです。静岡大学大学院で情報検索、自然言語処理、商品比較支援、意思決定支援に関する研究に取り組んでいます。" />
+  <meta name="author" content="矢崎 直音 / Naoto Yazaki" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://yazaki7010.github.io/About-Yazaki/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="矢崎 直音 / Naoto Yazaki Portfolio" />
+  <meta property="og:title" content="矢崎 直音 / Naoto Yazaki | Portfolio" />
+  <meta property="og:description" content="矢崎 直音（Naoto Yazaki）のポートフォリオサイトです。静岡大学大学院で情報検索、自然言語処理、商品比較支援、意思決定支援に関する研究に取り組んでいます。" />
+  <meta property="og:url" content="https://yazaki7010.github.io/About-Yazaki/" />
+  <meta name="twitter:card" content="summary" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "矢崎 直音",
+      "alternateName": "Naoto Yazaki",
+      "url": "https://yazaki7010.github.io/About-Yazaki/",
+      "sameAs": [
+        "https://github.com/yazaki7010"
+      ],
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "静岡大学"
+      },
+      "knowsAbout": [
+        "情報検索",
+        "自然言語処理",
+        "商品比較支援",
+        "意思決定支援"
+      ]
+    }
+  </script>
   <style>
     :root {
       --bg: #f7f8fa;
@@ -168,17 +200,6 @@
   </style>
 </head>
 
-<script>
-  const user = "yazaki.naoto.22";
-  const domain = "shizuoka.ac.jp";
-
-  const link = document.getElementById("email-link");
-  link.addEventListener("click", function(e) {
-    e.preventDefault();
-    window.location.href = "mailto:" + user + "@" + domain;
-  });
-</script>
-
 <body>
   <div class="container">
     <header>
@@ -295,5 +316,17 @@
       © 2026 Naoto Yazaki
     </footer>
   </div>
+  <script>
+    const user = "yazaki.naoto.22";
+    const domain = "shizuoka.ac.jp";
+    const link = document.getElementById("email-link");
+
+    if (link) {
+      link.addEventListener("click", function(e) {
+        e.preventDefault();
+        window.location.href = "mailto:" + user + "@" + domain;
+      });
+    }
+  </script>
 </body>
 </html>
