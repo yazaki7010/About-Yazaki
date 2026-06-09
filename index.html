@@ -77,6 +77,28 @@
       border-bottom: 1px solid var(--line);
     }
 
+    .profile-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .profile-copy {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .profile-photo {
+      width: clamp(112px, 20vw, 168px);
+      aspect-ratio: 1;
+      flex: 0 0 auto;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid var(--line);
+      background: #ffffff;
+    }
+
     nav {
       margin-top: 16px;
       display: flex;
@@ -193,6 +215,15 @@
         padding-top: 32px;
       }
 
+      .profile-header {
+        align-items: center;
+        gap: 18px;
+      }
+
+      .profile-photo {
+        width: 96px;
+      }
+
       .meta-list {
         grid-template-columns: 1fr;
       }
@@ -203,9 +234,14 @@
 <body>
   <div class="container">
     <header>
-      <h1>矢崎 直音</h1>
-      <p class="subtitle">静岡大学大学院 総合科学技術研究科 情報学専攻 修士1年</p>
-      <p class="subtitle">山梨県出身</p>
+      <div class="profile-header">
+        <div class="profile-copy">
+          <h1>矢崎 直音</h1>
+          <p class="subtitle">静岡大学大学院 総合科学技術研究科 情報学専攻 修士1年</p>
+          <p class="subtitle">山梨県出身</p>
+        </div>
+        <img class="profile-photo" src="yazaki_photp.jpg" alt="矢崎 直音のプロフィール写真" />
+      </div>
       
       <nav>
         <a href="#about">自己紹介</a>
