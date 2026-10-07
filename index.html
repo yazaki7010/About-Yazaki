@@ -19,7 +19,7 @@
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "矢崎 直音",
-      "alternateName": "Naoto Yazaki",
+      "alternateName": ["Naoto Yazaki", "ヤザキナオト"],
       "url": "https://yazaki7010.github.io/About-Yazaki/",
       "sameAs": [
         "https://github.com/yazaki7010"
@@ -197,6 +197,15 @@
       vertical-align: middle;
     }
 
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      white-space: nowrap;
+    }
+
     footer {
       padding-top: 24px;
       color: var(--muted);
@@ -236,7 +245,7 @@
     <header>
       <div class="profile-header">
         <div class="profile-copy">
-          <h1>矢崎 直音</h1>
+          <h1>矢崎 直音<span class="visually-hidden">（ヤザキナオト）</span></h1>
           <p class="subtitle">静岡大学大学院 総合科学技術研究科 情報学専攻 修士1年</p>
           <p class="subtitle">山梨県出身</p>
         </div>
@@ -306,6 +315,11 @@
             <h3>ポスター発表</h3>
             <ol>
               <li>
+                <p><strong>プロンプト拡張による商品キャッチコピー生成のための商品比較に必要十分な特徴抽出</strong></p>
+                <p class="meta">発表：東海関西データベースワークショップ2026（DBWS2026）</p>
+                <p>キャッチコピー生成研究のための分析研究の構想発表</p>
+              </li>
+              <li>
                 <p><strong>キャッチコピー化のためのその商品らしいレビュー文の特定</strong></p>
                 <p class="meta">発表：東海関西データベースワークショップ2025（DBWS2025）</p>
                 <p>商品比較支援の研究の構想発表</p>
@@ -320,7 +334,8 @@
         <ul>
           <li>DEIM2026 学生プレゼンテーション賞（2026年3月）</li>
           <li>DEIM2026 優秀インタラクティブ賞（2026年3月）</li>
-          <li>DBWS2025 最優秀発表賞（2025年）</li>
+          <li>DBWS2026 最優秀発表賞（2026年9月）</li>
+          <li>DBWS2025 最優秀発表賞（2025年9月）</li>
         </ul>
       </section>
 
@@ -337,7 +352,7 @@
         <h2>その他</h2>
         <ul>
           <li>趣味：星野源、料理、神社仏閣巡り、温泉巡り、スポーツなど</li>
-          <li>研究室Webサイト：<a href="#">https://shoji-lab.github.io/</a></li>
+          <li>研究室Webサイト：<a href="https://shoji-lab.github.io/">https://shoji-lab.github.io/</a></li>
         </ul>
       </section>
 
