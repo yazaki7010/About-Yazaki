@@ -243,6 +243,29 @@
       flex: 0 0 auto;
     }
 
+    .pdf-embed {
+      margin-top: 10px;
+      width: 100%;
+      height: 480px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      overflow: hidden;
+      background: #ffffff;
+    }
+
+    .pdf-embed iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+
+    @media (max-width: 640px) {
+      .pdf-embed {
+        height: 360px;
+      }
+    }
+
     .visually-hidden {
       position: absolute;
       width: 1px;
@@ -341,10 +364,13 @@
                 <p><strong>Distinctive Review Sentence Extraction via Multi-Product Relative Comparsion</strong></p>
                 <p class="meta">著者：Naoto Yazaki, Katsumi Tanaka, Yoshiyuki Shoji</p>
                 <p class="meta">発表会議：The International Conference on Behavioural and Social Computing（BESC2026）</p>
+                <div class="pdf-embed">
+                  <iframe src="BESC2026_paper_p1.pdf" title="BESC2026 論文1ページ目" loading="lazy"></iframe>
+                </div>
                 <div class="doc-links">
                   <a class="doc-link" href="BESC2026_paper_p1.pdf" target="_blank" rel="noopener">
                     <svg class="doc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v4h4"/><path d="M9 13h6"/><path d="M9 17h6"/></svg>
-                    論文PDF（1ページ目）
+                    論文PDF（1ページ目）を新しいタブで開く
                   </a>
                 </div>
               </li>
@@ -359,14 +385,20 @@
                 <p class="meta">著者：矢崎直音，田中克己，莊司慶行</p>
                 <p class="meta">発表会議：第18回データ工学と情報マネジメントに関するフォーラム（DEIM2026）</p>
                 <p>複数商品比較時に、もっともその商品らしい特徴に言及したレビュー文を抽出する手法を提案</p>
+                <div class="pdf-embed">
+                  <iframe src="DEIM2026_paper_p1.pdf" title="DEIM2026 論文1ページ目" loading="lazy"></iframe>
+                </div>
+                <div class="pdf-embed">
+                  <iframe src="DEIM2026_poster.pdf" title="DEIM2026 ポスター" loading="lazy"></iframe>
+                </div>
                 <div class="doc-links">
                   <a class="doc-link" href="DEIM2026_paper_p1.pdf" target="_blank" rel="noopener">
                     <svg class="doc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v4h4"/><path d="M9 13h6"/><path d="M9 17h6"/></svg>
-                    論文PDF（1ページ目）
+                    論文PDF（1ページ目）を新しいタブで開く
                   </a>
                   <a class="doc-link" href="DEIM2026_poster.pdf" target="_blank" rel="noopener">
                     <svg class="doc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v4h4"/><path d="M9 13h6"/><path d="M9 17h6"/></svg>
-                    ポスターPDF
+                    ポスターPDFを新しいタブで開く
                   </a>
                 </div>
               </li>
@@ -380,10 +412,13 @@
                 <p><strong>プロンプト拡張による商品キャッチコピー生成のための商品比較に必要十分な特徴抽出</strong></p>
                 <p class="meta">発表：東海関西データベースワークショップ2026（DBWS2026）</p>
                 <p>キャッチコピー生成研究のための分析研究の構想発表</p>
+                <div class="pdf-embed">
+                  <iframe src="DBWS2026_poster.pdf" title="DBWS2026 ポスター" loading="lazy"></iframe>
+                </div>
                 <div class="doc-links">
                   <a class="doc-link" href="DBWS2026_poster.pdf" target="_blank" rel="noopener">
                     <svg class="doc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v4h4"/><path d="M9 13h6"/><path d="M9 17h6"/></svg>
-                    ポスターPDF
+                    ポスターPDFを新しいタブで開く
                   </a>
                 </div>
               </li>
@@ -391,10 +426,13 @@
                 <p><strong>キャッチコピー化のためのその商品らしいレビュー文の特定</strong></p>
                 <p class="meta">発表：東海関西データベースワークショップ2025（DBWS2025）</p>
                 <p>商品比較支援の研究の構想発表</p>
+                <div class="pdf-embed">
+                  <iframe src="DBWS2025_poster.pdf" title="DBWS2025 ポスター" loading="lazy"></iframe>
+                </div>
                 <div class="doc-links">
                   <a class="doc-link" href="DBWS2025_poster.pdf" target="_blank" rel="noopener">
                     <svg class="doc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v4h4"/><path d="M9 13h6"/><path d="M9 17h6"/></svg>
-                    ポスターPDF
+                    ポスターPDFを新しいタブで開く
                   </a>
                 </div>
               </li>
