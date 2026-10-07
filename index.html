@@ -225,10 +225,14 @@
 
     .entry-thumbs {
       flex: 0 0 auto;
-      width: 160px;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      flex-wrap: wrap;
       gap: 10px;
+    }
+
+    .pdf-thumb-item {
+      width: 96px;
     }
 
     .pdf-thumb {
@@ -253,8 +257,11 @@
     }
 
     @media (max-width: 640px) {
+      .pdf-thumb-item {
+        width: 72px;
+      }
+
       .entry-thumbs {
-        width: 92px;
         gap: 6px;
       }
 
@@ -365,10 +372,12 @@
                     <p class="meta">発表会議：The International Conference on Behavioural and Social Computing（BESC2026）</p>
                   </div>
                   <div class="entry-thumbs">
-                    <a class="pdf-thumb" href="BESC2026_paper_p1.pdf" target="_blank" rel="noopener">
-                      <img src="thumbs/BESC2026_paper_p1.png" alt="BESC2026 論文1ページ目" loading="lazy" />
-                    </a>
-                    <p class="pdf-thumb-label">論文PDF（1ページ目）</p>
+                    <div class="pdf-thumb-item">
+                      <a class="pdf-thumb" href="BESC2026_paper_p1.pdf" target="_blank" rel="noopener">
+                        <img src="thumbs/BESC2026_paper_p1.png" alt="BESC2026 論文1ページ目" loading="lazy" />
+                      </a>
+                      <p class="pdf-thumb-label">論文PDF（1ページ目）</p>
+                    </div>
                   </div>
                 </div>
               </li>
@@ -387,13 +396,13 @@
                     <p>複数商品比較時に、もっともその商品らしい特徴に言及したレビュー文を抽出する手法を提案</p>
                   </div>
                   <div class="entry-thumbs">
-                    <div>
+                    <div class="pdf-thumb-item">
                       <a class="pdf-thumb" href="DEIM2026_paper_p1.pdf" target="_blank" rel="noopener">
                         <img src="thumbs/DEIM2026_paper_p1.png" alt="DEIM2026 論文1ページ目" loading="lazy" />
                       </a>
                       <p class="pdf-thumb-label">論文PDF（1ページ目）</p>
                     </div>
-                    <div>
+                    <div class="pdf-thumb-item">
                       <a class="pdf-thumb" href="DEIM2026_poster.pdf" target="_blank" rel="noopener">
                         <img src="thumbs/DEIM2026_poster.png" alt="DEIM2026 ポスター" loading="lazy" />
                       </a>
@@ -416,10 +425,12 @@
                     <p>キャッチコピー生成研究のための分析研究の構想発表</p>
                   </div>
                   <div class="entry-thumbs">
-                    <a class="pdf-thumb" href="DBWS2026_poster.pdf" target="_blank" rel="noopener">
-                      <img src="thumbs/DBWS2026_poster.png" alt="DBWS2026 ポスター" loading="lazy" />
-                    </a>
-                    <p class="pdf-thumb-label">ポスターPDF</p>
+                    <div class="pdf-thumb-item">
+                      <a class="pdf-thumb" href="DBWS2026_poster.pdf" target="_blank" rel="noopener">
+                        <img src="thumbs/DBWS2026_poster.png" alt="DBWS2026 ポスター" loading="lazy" />
+                      </a>
+                      <p class="pdf-thumb-label">ポスターPDF</p>
+                    </div>
                   </div>
                 </div>
               </li>
@@ -431,10 +442,12 @@
                     <p>商品比較支援の研究の構想発表</p>
                   </div>
                   <div class="entry-thumbs">
-                    <a class="pdf-thumb" href="DBWS2025_poster.pdf" target="_blank" rel="noopener">
-                      <img src="thumbs/DBWS2025_poster.png" alt="DBWS2025 ポスター" loading="lazy" />
-                    </a>
-                    <p class="pdf-thumb-label">ポスターPDF</p>
+                    <div class="pdf-thumb-item">
+                      <a class="pdf-thumb" href="DBWS2025_poster.pdf" target="_blank" rel="noopener">
+                        <img src="thumbs/DBWS2025_poster.png" alt="DBWS2025 ポスター" loading="lazy" />
+                      </a>
+                      <p class="pdf-thumb-label">ポスターPDF</p>
+                    </div>
                   </div>
                 </div>
               </li>
